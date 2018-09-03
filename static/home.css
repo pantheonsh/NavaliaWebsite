@@ -1,0 +1,110 @@
+body {
+    background-color: #202225;
+    background-image: url("./background-dark.png");
+    animation:100s scroll infinite linear;
+    background-repeat: repeat;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+}
+
+.panel {
+    flex-grow: 1;
+    height: 100vh;
+    margin: 0px 20px;
+}
+
+.panel.navalia {
+    background-image: url("./navalia_shadow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.panel.info {
+    display: flex;
+    flex-direction: column;
+    margin: 25vh 20px;
+    word-wrap: break-word;
+    max-width: 50vw;
+    height: auto;
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    color: #aaa;
+}
+
+.buttons {
+    word-wrap: normal;
+}
+
+.action-button {
+    padding: 20px 0px;
+    background: #7289DA;
+    color: white !important;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    margin: 2px 2px;
+    width: 30%;
+    cursor: pointer;
+    user-select: none;
+}
+.action-button:hover { background: rgb(127, 152, 240); }
+.action-button.green { background: rgb(63, 167, 72); }
+.action-button.green:hover { background: rgb(81, 211, 92); }
+.action-button.red { background: rgb(235, 62, 62); }
+.action-button.red:hover { background: rgb(253, 68, 68); }
+
+.author {
+    display: flex;
+    align-items: center;
+}
+.author-avatar {
+    width: 24px;
+}
+.author-name {
+    margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+    .app {
+        flex-direction: column;
+    }
+
+    .panel.navalia {
+        height: 50vh;
+    }
+    .panel.info {
+        display: flex;
+        align-items: flex-start;
+        margin: 0px 20px;
+        height: auto;
+        max-width: inherit;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .action-button {
+        flex-grow: 1;
+        width: auto;
+        display: block;
+    }
+}
+
+@keyframes scroll{
+    100%{
+      background-position:-1000px -3000px;
+    }
+}
