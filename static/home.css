@@ -1,6 +1,6 @@
 body {
     background-color: #202225;
-    background-image: url("./background-dark.png");
+    background-image: url("./img/background-dark.png");
     animation:100s scroll infinite linear;
     background-repeat: repeat;
     margin: 0;
@@ -19,7 +19,7 @@ body {
 }
 
 .panel.navalia {
-    background-image: url("./navalia_shadow.png");
+    background-image: url("./img/navalia_shadow.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
