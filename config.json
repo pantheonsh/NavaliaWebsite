@@ -1,0 +1,8 @@
+{
+    "navalia_bootstrap": {
+        "file": "navalia/bot/index.js",
+        "shardArgs": ["--no-deprecation"],
+        "respawn": true,
+        "totalShards": 1
+    }
+}

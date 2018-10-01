@@ -63,6 +63,10 @@ p {
 .action-button.red { background: rgb(235, 62, 62); }
 .action-button.red:hover { background: rgb(253, 68, 68); }
 
+.status {
+    color: white;
+}
+
 .author {
     display: flex;
     align-items: center;

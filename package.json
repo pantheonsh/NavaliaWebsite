@@ -1,7 +1,9 @@
 {
     "name": "navalia-web",
     "dependencies": {
+        "discord.js": "^11.4.2",
         "express": "^4.16.3",
-        "express-handlebars": "^3.0.0"
+        "express-handlebars": "^3.0.0",
+        "json5": "^2.1.0"
     }
 }

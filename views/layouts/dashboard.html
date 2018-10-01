@@ -6,9 +6,17 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/static/dashboard.css">
         
+        <!-- Polyfills para ES6 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-sham.min.js"></script>
+
         <title>Navalia - Configurações</title>
     </head>
     <body class="dark">
+        <div class="guilds">
+            {{#each guilds}}
+                <div class="guild" title="{{ this.name }}" style="background-image: url('{{ this.iconURL }}');"></div>
+            {{/each}}
+        </div>
         {{{ body }}}
     </body>
 </html>

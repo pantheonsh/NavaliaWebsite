@@ -1,0 +1,16 @@
+<script>
+    var cmdList = {{{ cmdsJSONString }}};
+
+    /**
+     * Pesquisa na lista de comandos e retorna uma matriz contendo os resultados.
+     * Se a search query estiver no título ou descrição de um comando, ele é aceito.
+     * 
+     * @param {String} query Termos de pesquisa.
+     */
+    var search = query => {
+        return cmdList.filter(cmd => {
+            return cmd.name.includes(query) ||
+                   cmd.description.includes(query);
+        });
+    }
+</script>
